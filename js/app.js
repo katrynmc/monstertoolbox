@@ -4,6 +4,7 @@ var queue;
 function init() {
   stage = new createjs.Stage("monsterCanvas");
   // Loading manager
+  // by default the loadqueue will try to load using xhr to have them load locally set false
   queue = new createjs.LoadQueue(false);
   queue.installPlugin(createjs.Sound);
   queue.addEventListener("complete", handleComplete);
