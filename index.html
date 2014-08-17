@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This tells us it's an angular app -->
-<html ng-app>
+<html ng-app="MonsterParts">
 
 <head>
   <meta charset="utf-8">
@@ -11,10 +11,15 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 </head>
 
-<body onload="init()">
+<body ng-controller="MainCtrl" onload="init()">
   <h1>Monster toolbox</h1>
-  <div ng-init="hello='world'">
-    <h2>{{hello}}</h2>
+  <h3>Dr. {{greeting}} I presume?</h3>
+  <p>No...my name is:</p>
+  <ul>
+    <li ng-repeat="category in categories"><a href="#">{{category.name}}</a></li>
+
+  </ul>
+  <input type="text" ng-model="greeting" />
   </div>
 
   <canvas id="monsterCanvas" width="800" height="600">
@@ -31,7 +36,8 @@
   <!-- Create js -->
   <script src="http://code.createjs.com/createjs-2013.12.12.min.js"></script>
   <!-- Customizations -->
-  <script src="js/app.js"></script>
+  <script src="js/workspace.js"></script>
+  <script src="js/monsterparts-app.js"></script>
 </body>
 
 </html>
