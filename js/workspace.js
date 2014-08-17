@@ -8,7 +8,7 @@ function init() {
   queue = new createjs.LoadQueue(false);
   queue.installPlugin(createjs.Sound);
   queue.addEventListener("complete", handleComplete);
-  queue.loadManifest([{id:"eye1", src:"/assets/eye1.png"}, {id:"sound", src:"/assets/zenbell.mp3"}]);
+  queue.loadManifest([{id:"eye1", src:"https://s3.amazonaws.com/monstertoolbox/eye1.png"}, {id:"sound", src:"/images/zenbell.mp3"}]);
 
   }
 
