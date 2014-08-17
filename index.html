@@ -17,8 +17,10 @@
   <p>No...my name is:</p>
   <ul>
     <li ng-repeat="category in categories"><a href="#">{{category.name}}</a></li>
-
   </ul>
+  <div ng-repeat="part in parts">
+  <img src="{{part.location}}"/>
+  </div>
   <input type="text" ng-model="greeting" />
   </div>
 
