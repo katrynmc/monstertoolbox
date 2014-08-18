@@ -10,7 +10,7 @@ body{
   height: 65px;
   width: 85px;
   margin-left: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-size: 19px;
   padding-top: 10px;
   text-align: center;
@@ -28,4 +28,8 @@ body{
 .sidebar{
   background-color: #FFF4F4;
   height: 600px;
+}
+.shrink{
+  width: 25%;
+  height: 25%;
 }

@@ -52,7 +52,7 @@ function init() {
       event.currentTarget.y = event.stageY;
       stage.update();
     });
-    stage.update();
+
 }
 
   function tick(event) {
