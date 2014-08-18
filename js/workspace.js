@@ -15,14 +15,12 @@ function init() {
   function handleComplete(event) {
     // Every display object in easeljs can listen for a click event
     var ball = new createjs.Shape();
-    ball.addEventListener("click", handleClick);
+    ball.addEventListener("click", handleDrag);
     ball.graphics.beginFill("#000").drawCircle(0,0, 50);
     // Coordinates
     ball.x = 50;
     ball.y = 200;
 
-    // Create an animation that runs continuously (loop) that moves from x coordinate 50 to 450 in 3 seconds (3000)
-    createjs.Tween.get(ball, {loop:true}).to({x:450}, 3000).to({x:50}, 3000);
     createjs.Ticker.addEventListener("tick", tick);
     // add child grabs the shape and adds it to the stage display list
     stage.addChild(ball);
@@ -34,9 +32,28 @@ function init() {
     bmp.y = Math.random()*500;
 
     stage.addChild(bmp);
-
     createjs.Sound.play("sound");
+
   }
+
+  function handleDrag(event){
+    var bmp = new createjs.Bitmap(queue.getResult("eye1"));
+    bmp.x = Math.random()*500;
+    bmp.y = Math.random()*500;
+
+    var dragger = new createjs.Container();
+    dragger.x = dragger.y = 100;
+    dragger.addChild(bmp);
+    stage.addChild(dragger);
+    createjs.Sound.play("sound");
+
+    dragger.on("pressmove", function(event) {
+      event.currentTarget.x = event.stageX;
+      event.currentTarget.y = event.stageY;
+      stage.update();
+    });
+    stage.update();
+}
 
   function tick(event) {
   stage.update();
