@@ -15,7 +15,7 @@ function init() {
   function handleComplete(event) {
     // Every display object in easeljs can listen for a click event
     var ball = new createjs.Shape();
-    ball.addEventListener("click", handleDrag);
+    ball.addEventListener("click", handleClick);
     ball.graphics.beginFill("#000").drawCircle(0,0, 50);
     // Coordinates
     ball.x = 50;
@@ -36,24 +36,6 @@ function init() {
 
   }
 
-  function handleDrag(event){
-    var bmp = new createjs.Bitmap(queue.getResult("eye1"));
-    bmp.x = Math.random()*500;
-    bmp.y = Math.random()*500;
-
-    var dragger = new createjs.Container();
-    dragger.x = dragger.y = 100;
-    dragger.addChild(bmp);
-    stage.addChild(dragger);
-    createjs.Sound.play("sound");
-
-    dragger.on("pressmove", function(event) {
-      event.currentTarget.x = event.stageX;
-      event.currentTarget.y = event.stageY;
-      stage.update();
-    });
-
-}
 
   function tick(event) {
   stage.update();

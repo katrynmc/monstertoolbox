@@ -18,7 +18,26 @@ function handleComplete(event) {
   stage.addChild(instance);
   stage.update();
   instance.addEventListener("mousedown", startDrag);
+  var ball = new createjs.Shape();
+  ball.addEventListener("click", handleClick);
+    ball.graphics.beginFill("#000").drawCircle(0,0, 50);
+    // Coordinates
+    ball.x = 50;
+    ball.y = 200;
+
+    createjs.Ticker.addEventListener("tick", tick);
+    // add child grabs the shape and adds it to the stage display list
+    stage.addChild(ball);
 }
+function handleClick(event){
+    var bmp = new createjs.Bitmap(queue.getResult("eye1"));
+    bmp.x = Math.random()*500;
+    bmp.y = Math.random()*500;
+
+    stage.addChild(bmp);
+    createjs.Sound.play("sound");
+
+  }
 
 function startDrag(eventObject) {
   var instance = eventObject.target;
@@ -49,3 +68,7 @@ function drawRectangle(myGraphics) {
   myGraphics.beginFill("cyan");
   myGraphics.drawRect(-20, -20, 40, 40);
 }
+function tick(event) {
+  stage.update();
+}
+
