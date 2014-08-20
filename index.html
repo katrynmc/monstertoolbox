@@ -13,7 +13,7 @@
 </head>
 <!-- Add onload="init()" for workspace -->
 <body ng-controller="MainCtrl" onload="init()">
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<div class="navbar navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -32,19 +32,20 @@
       <div class="drawer" ng-repeat="category in categories"><a href="#" ng-click="setCurrentCategory(category)">{{category.name}}</a></div>
     </div>
   </div>
-  <div class="row">
+  <div class="row canvas">
 
-    <div class="col-sm-3 col-md-3 sidebar">
+
+    <div class="col-sm-9 col-md-9 sidebar">
+
       <p><a href="#" ng-click="setCurrentCategory(null)">Hide</a></p>
       <div ng-repeat="part in parts | filter:{category:currentCategory.name}">
-        <img class="shrink" src="{{part.location}}"/>
+        <img class="shrink" src="{{part.location}}" id="part{{part.id}}"/>
       </div>
-    </div>
-
-    <div class="col-sm-6 col-md-6 canvas">
-      <canvas id="monsterCanvas" width="800" height="500">
+<canvas id="monsterCanvas" width="800" height="500">
       </canvas>
     </div>
+
+
 
     <div class="col-sm-3 col-md-3 sidebar">
       <h3>Dr. {{greeting}} I presume?</h3>

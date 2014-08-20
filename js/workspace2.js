@@ -8,26 +8,20 @@ function init() {
   stage.addChild(instance);
   stage.update();
   instance.addEventListener("mousedown", startDrag);
-
+  // by default the loadqueue will try to load using xhr to have them load locally set false
   queue = new createjs.LoadQueue(false);
   queue.installPlugin(createjs.Sound);
   queue.addEventListener("complete", handleComplete);
-  queue.loadManifest([{id:"eye1", src:"https://s3.amazonaws.com/monstertoolbox/eye1.png"}, {id:"sound", src:"/images/zenbell.mp3"}]);
+  queue.loadManifest([{id:"eye1", src:"https://s3.amazonaws.com/monstertoolbox/eye1.png"}, {id:"sound", src:"/images/blip.mp3"}]);
 }
 function handleComplete(event) {
   stage.addChild(instance);
   stage.update();
   instance.addEventListener("mousedown", startDrag);
-  var ball = new createjs.Shape();
+  var ball = document.getElementById("part0");
   ball.addEventListener("click", handleClick);
-    ball.graphics.beginFill("#000").drawCircle(0,0, 50);
-    // Coordinates
-    ball.x = 50;
-    ball.y = 200;
 
-    createjs.Ticker.addEventListener("tick", tick);
-    // add child grabs the shape and adds it to the stage display list
-    stage.addChild(ball);
+
 }
 function handleClick(event){
     var bmp = new createjs.Bitmap(queue.getResult("eye1"));
@@ -36,6 +30,7 @@ function handleClick(event){
 
     stage.addChild(bmp);
     createjs.Sound.play("sound");
+    stage.update();
 
   }
 

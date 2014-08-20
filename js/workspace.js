@@ -14,7 +14,7 @@ function init() {
 
   function handleComplete(event) {
     // Every display object in easeljs can listen for a click event
-    var ball = new createjs.Shape();
+    var ball = document.getElementById("part0");
     ball.addEventListener("click", handleClick);
     ball.graphics.beginFill("#000").drawCircle(0,0, 50);
     // Coordinates

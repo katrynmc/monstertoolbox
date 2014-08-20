@@ -1,6 +1,6 @@
 body{
   margin-top: 50px;
-  background-color: rgb(241, 150, 172);
+  background-color: #666;
 
 }
 .drawer {
@@ -26,10 +26,10 @@ body{
   height: 600px;
 }
 .sidebar{
-  background-color: #FFF4F4;
+
   height: 600px;
 }
 .shrink{
-  width: 25%;
+  width: 5%;
   height: 25%;
 }
