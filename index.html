@@ -39,9 +39,9 @@
 
       <p><a href="#" ng-click="setCurrentCategory(null)">Hide</a></p>
       <div ng-repeat="part in parts | filter:{category:currentCategory.name}">
-        <img class="part-button" src="{{part.location}}" id="part{{part.id}}" ng-click="$scope.handleclick"/>
+        <img class="part-button" src="{{part.location}}" id="part{{part.id}}" />
       </div>
-<canvas id="monsterCanvas" width="800" height="500">
+<canvas id="monsterCanvas" width="960" height="500">
       </canvas>
     </div>
 
@@ -65,7 +65,8 @@
   <!-- Create js -->
   <script src="http://code.createjs.com/createjs-2013.12.12.min.js"></script>
   <!-- Customizations -->
-  <script src="js/workspace2.js"></script>
+  <!-- <script src="js/workspace2.js"></script> -->
+  <script src="js/daisy.js"></script>
   <script src="js/monsterparts-app.js"></script>
 </body>
 

@@ -12,8 +12,8 @@ angular.module('MonsterParts',[])
   ];
 
   $scope.parts = [
-    {"id": 0, "location": "https://s3.amazonaws.com/monstertoolbox/eye1.png", "category": "Eyes" },
-    {"id": 1, "location": "https://s3.amazonaws.com/monstertoolbox/mouth.png", "category": "Mouths" }
+    {"id": 0, "location": "/images/eye1.png", "category": "Eyes" },
+    {"id": 1, "location": "/images/mouth.png", "category": "Mouths" }
   ];
   $scope.currentCategory = null;
 
