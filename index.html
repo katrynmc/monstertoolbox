@@ -39,7 +39,7 @@
 
       <p><a href="#" ng-click="setCurrentCategory(null)">Hide</a></p>
       <div ng-repeat="part in parts | filter:{category:currentCategory.name}">
-        <img class="shrink" src="{{part.location}}" id="part{{part.id}}"/>
+        <img class="part-button" src="{{part.location}}" id="part{{part.id}}" ng-click="$scope.handleclick"/>
       </div>
 <canvas id="monsterCanvas" width="800" height="500">
       </canvas>

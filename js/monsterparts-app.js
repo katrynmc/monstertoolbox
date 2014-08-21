@@ -1,6 +1,4 @@
-angular.module('MonsterParts',[
-
-  ])
+angular.module('MonsterParts',[])
 .controller('MainCtrl', function($scope){
   $scope.categories = [
     {"id": 0, "name": "Eyes"},
@@ -14,14 +12,16 @@ angular.module('MonsterParts',[
   ];
 
   $scope.parts = [
-    {"id": 0, "location": "https://s3.amazonaws.com/monstertoolbox/eye1.png", "category": "Eyes" }
+    {"id": 0, "location": "https://s3.amazonaws.com/monstertoolbox/eye1.png", "category": "Eyes" },
+    {"id": 1, "location": "https://s3.amazonaws.com/monstertoolbox/mouth.png", "category": "Mouths" }
   ];
   $scope.currentCategory = null;
 
   function setCurrentCategory(category) {
     $scope.currentCategory = category;
   }
-  $scope.setCurrentCategory = setCurrentCategory;
 
+  $scope.setCurrentCategory = setCurrentCategory;
   $scope.greeting = 'Frankenstein';
+
 });

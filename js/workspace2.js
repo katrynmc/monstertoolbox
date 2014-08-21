@@ -12,19 +12,27 @@ function init() {
   queue = new createjs.LoadQueue(false);
   queue.installPlugin(createjs.Sound);
   queue.addEventListener("complete", handleComplete);
-  queue.loadManifest([{id:"eye1", src:"https://s3.amazonaws.com/monstertoolbox/eye1.png"}, {id:"sound", src:"/images/blip.mp3"}]);
+  queue.loadManifest([
+    {id:"part0", src:"https://s3.amazonaws.com/monstertoolbox/eye1.png"},
+    {id:"part1", src:"https://s3.amazonaws.com/monstertoolbox/mouth.png"},
+    {id:"sound", src:"/images/blip.mp3"},
+    ]);
 }
 function handleComplete(event) {
   stage.addChild(instance);
   stage.update();
   instance.addEventListener("mousedown", startDrag);
-  var ball = document.getElementById("part0");
-  ball.addEventListener("click", handleClick);
+  var partButton = document.getElementsByClassName("part-button");
+  var partTotal = partButton.length;
+  for(var i = 0; i < partTotal ; i++){
+    partButton[i].addEventListener('click', handleClick, false);
+  }
 
+//add a data attribute
 
 }
 function handleClick(event){
-    var bmp = new createjs.Bitmap(queue.getResult("eye1"));
+    var bmp = new createjs.Bitmap(queue.getResult(this.id));
     bmp.x = Math.random()*500;
     bmp.y = Math.random()*500;
 
