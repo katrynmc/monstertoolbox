@@ -63,7 +63,7 @@ var canvas, stage;
 
       bitmap.regX = bitmap.image.width/2|0;
       bitmap.regY = bitmap.image.height/2|0;
-
+      bitmap.scaleX = bitmap.scaleY = bitmap.scale = Math.random()*0.4+0.6;
       bitmap.name = "bmp_"+index;
       bitmap.cursor = "pointer";
       index += 1;
