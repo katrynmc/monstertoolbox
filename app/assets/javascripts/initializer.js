@@ -39,4 +39,11 @@ monster.initialize = function() {
 
   $('#eyes').hide();
   $('#mouths').hide();
+  $('#noses').hide();
+  $('#ears').hide();
+  $('#horns').hide();
+  $('#arms').hide();
+  $('#legs').hide();
+  $('#tails').hide();
+  $('#hair').hide();
 };
