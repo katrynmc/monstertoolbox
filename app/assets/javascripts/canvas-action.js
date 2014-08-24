@@ -1,4 +1,4 @@
-var canvas;
+
 var mouseTarget;  // the display object currently under the mouse, or being dragged
 var dragStarted;  // indicates whether we are currently in a drag operation
 var offset;
@@ -9,22 +9,9 @@ function stop() {
   createjs.Ticker.removeEventListener("tick", tick);
 }
 
-// function handleComplete(event) {
-//   // Create an array of all elements with class "part-button"
-//   var partButton = document.getElementsByClassName("part-button");
-//   // Get the length of the array
-//   var partTotal = partButton.length;
-//   // For each item in the array add an event listener that triggers
-//   // "handleclick" function when clicked
-//   for(var i = 0; i < partTotal ; i++){
-//     partButton[i].addEventListener('click', handleClick);
-//   }
-// }
 function handleClick(event) {
   var image = event.target;
   var bitmap;
-
-
   var container = new createjs.Container();
   stage.addChild(container);
 
@@ -85,3 +72,6 @@ function tick(event) {
     stage.update(event);
   }
 }
+document.getElementById('clear').addEventListener('click', function() {
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    }, false);

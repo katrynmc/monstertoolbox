@@ -25,6 +25,7 @@ monster.initialize = function() {
 
   //Find all the elements with class "part-button"
   var partButton = document.getElementsByClassName("part-button");
+
   // Get the length of the array
   var partTotal = partButton.length;
   // For each item in the array add an event listener that triggers
