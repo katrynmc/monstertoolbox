@@ -46,9 +46,9 @@ monster.initialize = function() {
     $("#frm").trigger("submit");
   });
 
-  var myImage = new Image();
-  myImage.crossOrigin="anonymous";
-  myImage.src = $('#themain').data('parent-url');
+  // var myImage = new Image();
+  // myImage.crossOrigin="anonymous";
+  // myImage.src = $('#themain').data('parent-url');
 
   $(myImage).load(function() {
     e.drawImage(myImage, 0, 0);

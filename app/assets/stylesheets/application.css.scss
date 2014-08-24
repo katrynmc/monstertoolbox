@@ -1,7 +1,13 @@
 @import "font-awesome";
 @import "foundation";
 
-
+.homepage {
+  width: 100%;
+}
+.floatontop{
+  position: absolute;
+  z-index: 2;
+}
 .drawer-tab {
   display:inline-block;
   color: #fff;
