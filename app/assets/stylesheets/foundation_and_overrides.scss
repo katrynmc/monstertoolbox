@@ -1,43 +1,4 @@
-body{
-  background-image: url('/images/background.png');
 
-}
-.drawer {
-  display:inline-block;
-  color: #000;
-  background-color: #fff;
-  height: 45px;
-  width: 85px;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  padding-top: 10px;
-  text-align: center;
-  border-radius: 0px 0px 200px 200px;
-  -moz-border-radius: 0px 0px 200px 200px;
-  -webkit-border-radius: 0px 0px 200px 200px;
-}
-.drawer a{
-  color: #000;
-}
-.canvas{
-  background-color: rgba(255, 255, 255, 0.63);
-  height: 600px;
-}
-.sidebar{
-  height: 600px;
-}
-.part-button{
-  width: 30%;
-  height: 30%;
-  display:inline-block;
-}
-.dark{
-background-color: rgba(0, 0, 0, 0.23)
-}
-.light{
-  background-color: rgba(255, 255, 255, 0.63);
-}
 
 // Foundation by ZURB
 // foundation.zurb.com
@@ -86,7 +47,7 @@ background-color: rgba(0, 0, 0, 0.23)
 // $font-weight-bold: bold !default
 
 // We use these to control various global styles
-// $body-bg: #fff;
+$body-bg: image-url('background.png');
 // $body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: $font-weight-normal;
@@ -1339,3 +1300,5 @@ background-color: rgba(0, 0, 0, 0.23)
 // $range-slider-handle-cursor: pointer;
 
 @import 'foundation';
+
+

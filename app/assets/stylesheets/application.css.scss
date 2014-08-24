@@ -1,3 +1,43 @@
+@import "font-awesome";
+@import "foundation";
+
+
+.drawer {
+  display:inline-block;
+  color: #000;
+  background-color: #fff;
+  height: 45px;
+  width: 85px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  padding-top: 10px;
+  text-align: center;
+  border-radius: 0px 0px 200px 200px;
+  -moz-border-radius: 0px 0px 200px 200px;
+  -webkit-border-radius: 0px 0px 200px 200px;
+}
+.drawer a{
+  color: #000;
+}
+.canvas{
+  background-color: rgba(255, 255, 255, 0.63);
+  height: 600px;
+}
+.sidebar{
+  height: 600px;
+}
+.part-button{
+  width: 30%;
+  height: 30%;
+  display:inline-block;
+}
+.dark{
+background-color: rgba(0, 0, 0, 0.23)
+}
+.light{
+  background-color: rgba(255, 255, 255, 0.63);
+}
 
 /* Add imports of custom sass/scss files here *//*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -11,8 +51,9 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
+
  *= require_self
  *= require foundation_and_overrides
  *= require foundation
+*= require_tree .
  */
