@@ -3,7 +3,6 @@ var monster = monster || {};
 monster.initialize = function() {
   $(document).foundation();
 
-
   canvas = document.getElementById("monsterCanvas");
   stage = new createjs.Stage(canvas);
 
@@ -25,7 +24,6 @@ monster.initialize = function() {
 
   //Find all the elements with class "part-button"
   var partButton = document.getElementsByClassName("part-button");
-
   // Get the length of the array
   var partTotal = partButton.length;
   // For each item in the array add an event listener that triggers
@@ -37,6 +35,30 @@ monster.initialize = function() {
     context.clearRect(0, 0, canvas.width, canvas.height);
     }, false);
 
+  $('#save').click(function(event){
+    event.preventDefault();
+    $('#monster-details').show( "slow");
+  });
+
+  $("#submit").click(function(event){
+    event.preventDefault();
+    $("#data").val(d.toDataURL());
+    $("#frm").trigger("submit");
+  });
+
+  var myImage = new Image();
+  myImage.crossOrigin="anonymous";
+  myImage.src = $('#themain').data('parent-url');
+
+  $(myImage).load(function() {
+    e.drawImage(myImage, 0, 0);
+  });
+
+function saveRestorePoint() {
+  var oCanvas = document.getElementById("monsterCanvas");
+  var imgSrc = oCanvas.toDataURL("artwork/png");
+  restorePoints.push(imgSrc);
+}
   $('#eyes').hide();
   $('#mouths').hide();
   $('#noses').hide();
@@ -46,4 +68,5 @@ monster.initialize = function() {
   $('#legs').hide();
   $('#tails').hide();
   $('#hair').hide();
+  $('#monster-details').hide();
 };

@@ -61,22 +61,30 @@
 
   <div class="row canvas">
     <div class="small-12 large-12 columns">
-      <canvas id="monsterCanvas" width="700" height="600"></canvas>
+      <canvas id="monsterCanvas" width="900" height="500"></canvas>
     </div>
   </div>
 
   <div class="row dark">
-    <div class="small-12 columns">
-      <a href="#" class="button" id="clear">Clear</a>
-      <a href="#themain" class="button" id="save">Save</a>
-      <div class="field">
+    <div class="small-3 columns">
+      <a href="#" class="button small" id="clear">Clear</a>
+      <a href="#" class="button small" id="save">Save</a>
+    </div>
+    <div id="monster-details">
+      <div class="small-3 columns">
         <%= form_for @artwork, url: {controller: 'artworks', action: 'create'}, html: {id: 'frm'} do |f| %>
-            <%= f.hidden_field :monsterdrawing, id: 'data' %>
-            <h3>My monster's name is</h3>
-            <%= f.text_field :name, placeholder: 'Harold' %>
-            <h3>Created by</h3>
-            <%= f.text_field :artist, placeholder: 'Emily' %>
-            <% end %>
+          <%= f.hidden_field :monsterdrawing, id: 'data' %>
+          My monster's name is
+          <%= f.text_field :name, placeholder: 'Harold' %>
       </div>
+      <div class="small-3 columns">
+          Created by
+          <%= f.text_field :artist, placeholder: 'Emily' %>
+        <% end %>
+
+      </div>
+       <div class="small-3 columns">
+       <a href="#themain" class="button small" id="submit">Submit</a>
+       </div>
     </div>
   </div>
