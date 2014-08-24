@@ -88,8 +88,6 @@ $(myImage).load(function() {
 });
 
 
-
-
 function saveRestorePoint() {
   var oCanvas = document.getElementById("monsterCanvas");
   var imgSrc = oCanvas.toDataURL("image/png");
@@ -97,9 +95,5 @@ function saveRestorePoint() {
 }
 
 
-function saveRestorePoint() {
-  var oCanvas = document.getElementById("can");
-  var imgSrc = oCanvas.toDataURL("image/png");
-  restorePoints.push(imgSrc);
-}
+
 

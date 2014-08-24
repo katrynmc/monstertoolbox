@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140824013844) do
+ActiveRecord::Schema.define(version: 20140824084439) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,10 @@ ActiveRecord::Schema.define(version: 20140824013844) do
     t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "monsterdrawing_file_name"
+    t.string   "monsterdrawing_content_type"
+    t.integer  "monsterdrawing_file_size"
+    t.datetime "monsterdrawing_updated_at"
   end
 
 end

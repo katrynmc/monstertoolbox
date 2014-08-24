@@ -68,9 +68,22 @@
   <div class="row dark">
     <div class="small-12 columns">
       <a href="#" class="button" id="clear">Clear</a>
-      <a href="#" class="button" id="save">Save</a>
+      <a href="#themain" class="button" id="save">Save</a>
+      <div class="field">
+        <%= form_for @artwork, url: {controller: 'artworks', action: 'create'}, html: {id: 'frm'} do |f| %>
+            <%= f.hidden_field :monsterdrawing, id: 'data' %>
+            <h3>My monster's name is</h3>
+            <%= f.text_field :name, placeholder: 'Harold' %>
+            <h3>Created by</h3>
+            <%= f.text_field :artist, placeholder: 'Emily' %>
+            <% end %>
+      </div>
     </div>
   </div>
+
+
+
+
 
 
 
