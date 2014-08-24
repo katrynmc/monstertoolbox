@@ -1,0 +1,82 @@
+
+  <div class="row dark">
+    <div id="eyes">
+      <div class="small-12 columns" >
+        <%= render "eyes" %>
+      </div>
+    </div>
+    <div id="mouths">
+      <div class="small-12 columns" >
+        <%= render "mouths" %>
+      </div>
+    </div>
+    <div id="noses">
+      <div class="small-12 columns" >
+        <%= render "noses" %>
+      </div>
+    </div>
+    <div id="ears">
+      <div class="small-12 columns" >
+        <%= render "ears" %>
+      </div>
+    </div>
+    <div id="horns">
+      <div class="small-12 columns" >
+        <%= render "horns" %>
+      </div>
+    </div>
+    <div id="arms">
+      <div class="small-12 columns" >
+        <%= render "arms" %>
+      </div>
+    </div>
+    <div id="legs">
+      <div class="small-12 columns" >
+        <%= render "legs" %>
+      </div>
+    </div>
+    <div id="tails">
+      <div class="small-12 columns" >
+        <%= render "tails" %>
+      </div>
+    </div>
+    <div id="hair">
+      <div class="small-12 columns" >
+        <%= render "hair" %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+  <div class="drawer-tab" id="eyecategory">EYES</div>
+  <div class="drawer-tab" id="mouthcategory">MOUTHS</div>
+  <div class="drawer-tab" id="nosecategory">NOSES</div>
+  <div class="drawer-tab" id="earcategory">EARS</div>
+  <div class="drawer-tab" id="horncategory">HORNS</div>
+  <div class="drawer-tab" id="armcategory">ARMS</div>
+  <div class="drawer-tab" id="legcategory">LEGS</div>
+  <div class="drawer-tab" id="tailcategory">TAILS</div>
+  <div class="drawer-tab" id="haircategory">HAIR</div>
+
+</div>
+
+  <div class="row canvas">
+    <div class="small-12 large-12 columns">
+      <canvas id="monsterCanvas" width="700" height="600"></canvas>
+    </div>
+  </div>
+
+  <div class="row dark">
+    <div class="small-12 columns">
+      <a href="#" class="button" id="clear">Clear</a>
+      <a href="#themain" class="button" id="save">Save</a>
+      <div class="field">
+        <%= form_for @artwork, url: {controller: 'artworks', action: 'create'}, html: {id: 'frm'} do |f| %>
+            <%= f.hidden_field :monsterdrawing, id: 'data' %>
+            <h3>My monster's name is</h3>
+            <%= f.text_field :name, placeholder: 'Harold' %>
+            <h3>Created by</h3>
+            <%= f.text_field :artist, placeholder: 'Emily' %>
+            <% end %>
+      </div>
+    </div>
+  </div>

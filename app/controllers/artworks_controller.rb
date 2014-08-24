@@ -28,4 +28,4 @@ class ArtworksController < ApplicationController
     params.require(:artwork).permit(:monsterdrawing, :name, :artist)
   end
 end
-end
+
