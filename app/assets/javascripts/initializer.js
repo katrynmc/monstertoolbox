@@ -33,4 +33,7 @@ monster.initialize = function() {
   for(var i = 0; i < partTotal ; i++){
     partButton[i].addEventListener('click', handleClick);
   }
+  document.getElementById('clear').addEventListener('click', function() {
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    }, false);
 };

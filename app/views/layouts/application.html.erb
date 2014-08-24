@@ -12,52 +12,9 @@
   </head>
 
   <body>
-<div class="off-canvas-wrap" data-offcanvas>
-  <div class="inner-wrap">
-    <nav class="tab-bar">
-      <section class="left-small">
-        <a class="left-off-canvas-toggle menu-icon" href="#"><span>Parts</span></a>
-      </section>
-
-      <section class="middle tab-bar-section">
-        <h1 class="title text-center">Monster Toolbox</h1>
-      </section>
-
-      <section class="right-small">
-        <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
-      </section>
-    </nav>
-
-    <aside class="left-off-canvas-menu">
-      <ul class="off-canvas-list">
-        <li><label>Monster Parts</label></li>
-        <li><a href="#">Eyes</a></li>
-        <li><a href="#">Mouths</a></li>
-        <li><a href="#">Noses</a></li>
-        <li><a href="#">Ears</a></li>
-        <li><a href="#">Arms</a></li>
-        <li><a href="#">Legs</a></li>
-        <li><a href="#">Horns</a></li>
-        <li><a href="#">Hair</a></li>
-      </ul>
-    </aside>
-
-    <aside class="right-off-canvas-menu">
-      <ul class="off-canvas-list">
-        <li><label>Users</label></li>
-        <li><a href="#">Hari Seldon</a></li>
-        <li><a href="#">...</a></li>
-      </ul>
-    </aside>
-
-    <section class="main-section">
+ <%= render "menutop" %>
       <%= yield %>
-    </section>
 
-  <a class="exit-off-canvas"></a>
-
-  </div>
-</div>
 
     <script src="http://code.createjs.com/createjs-2013.12.12.min.js"></script>
     <%= javascript_include_tag "application" %>

@@ -2,10 +2,10 @@
 @import "foundation";
 
 
-.drawer {
+.drawer-tab {
   display:inline-block;
-  color: #000;
-  background-color: #fff;
+  color: #fff;
+  background-color: #000;
   height: 45px;
   width: 85px;
   margin-left: 20px;
@@ -17,7 +17,7 @@
   -moz-border-radius: 0px 0px 200px 200px;
   -webkit-border-radius: 0px 0px 200px 200px;
 }
-.drawer a{
+.drawer-tab a{
   color: #000;
 }
 .canvas{
