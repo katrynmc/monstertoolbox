@@ -1,4 +1,7 @@
+<%= link_to image_tag('monster-nav.png', class: "homepage"), root_path %>
 <div>
 Gallery
-<%= image_tag friend.avatar.url(:square) %>
+<% @artworks.each do |artwork| %>
+<%= link_to image_tag(artwork.monsterdrawing.url(:square)), artwork_path(artwork.id) %>
+<% end %>
 </div>

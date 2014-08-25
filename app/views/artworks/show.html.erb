@@ -1,1 +1,14 @@
-<%= image_tag @artwork.monsterdrawing.url(:medium) %>
+<%= link_to image_tag('monster-nav.png', class: "homepage"), root_path %>
+<div class="row">
+
+  <div class="small-4 columns">
+  </div>
+
+  <div class="small-4 columns">
+    <%= image_tag @artwork.monsterdrawing.url(:medium) %>
+  </div>
+
+  <div class="small-4 columns">
+  </div>
+
+</div>
