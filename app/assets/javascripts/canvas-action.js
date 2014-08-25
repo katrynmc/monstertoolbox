@@ -80,12 +80,12 @@ $('#save').click(function(event){
 
   $("#submit").click(function(event){
     event.preventDefault();
-    $("#data").val(d.toDataURL());
+    $("#data").val($("#monsterCanvas")[0].toDataURL());
     $("#frm").trigger("submit");
   });
 
-  // var myImage = new Image();
-  // myImage.crossOrigin="anonymous";
+    var myImage = new Image();
+    myImage.crossOrigin="anonymous";
   // myImage.src = $('#themain').data('parent-url');
 
   $(myImage).load(function() {

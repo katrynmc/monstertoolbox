@@ -40,6 +40,7 @@ gem 'aws-sdk'
 gem 'paperclip'
 gem 'rmagick'
 gem 'dotenv-rails', :groups => [:development, :test]
+gem 'pry-rails', :groups => [:development, :test]
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
