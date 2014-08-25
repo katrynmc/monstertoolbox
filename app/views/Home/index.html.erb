@@ -1,12 +1,15 @@
 
-<div class="floatontop">
 
-<%= link_to 'Get Started', new_artwork_path %>
+  <div class="floatontop">
+    <div class="circle-button1" >
+    <%= link_to 'Create!', new_artwork_path, class: "circle-text" %>
+    </div>
 
-<%= link_to 'View the gallery', artworks_path %>
+    <div class="circle-button2" >
+    <%= link_to 'Browse', artworks_path, class: "circle-text" %>
+    </div>
+  </div>
 
 
-</div>
+  <%= image_tag('monsterhome.png', class: "homepage") %>
 
-
-<%= image_tag('monsterhome.png', class: "homepage") %>
