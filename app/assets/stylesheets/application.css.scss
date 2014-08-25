@@ -8,7 +8,26 @@
   position: absolute;
   z-index: 2;
 }
+.pb-circle{
+  background-color: #fff;
+  height: 3.5em;
+  width: 3.5em;
+  padding: 0.6em;
+  border-radius: 50%;
+  -moz-box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 2, 0.41);
+  -webkit-box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 2, 0.41);
+  box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 2, 0.41);
+:hover {
+cursor: pointer;
+}
+}
+.part-button{
+  width: 6%;
+  height: 6%;
+  display:inline-block;
 
+
+}
 .circle-button1 {
   position: relative;
   display: inline-block;
@@ -18,7 +37,7 @@
   line-height: 0;
   border-radius: 50%;
   left: 7.5vw;
-  top: 45vw;
+  top: 40vw;
   -moz-box-shadow: inset 2px 2px 3px rgba(6, 8, 12, 0.31);
   -webkit-box-shadow: inset 2px 2px 3px rgba(6, 8, 12, 0.31);
   box-shadow: inset 2px 2px 3px rgba(6, 8, 12, 0.31);
@@ -32,10 +51,10 @@
   line-height: 0;
   border-radius: 50%;
   left: 62.5vw;
-  top: 45vw;
+  top: 40vw;
   -moz-box-shadow: inset 2px 2px 3px rgba(6, 8, 12, 0.31);
   -webkit-box-shadow: inset 2px 2px 3px rgba(6, 8, 12, 0.31);
-  box-shadow: inset 2px 2px 4px rgba(6, 8, 12, 0.31);
+  box-shadow: inset 2px 2px 3px rgba(6, 8, 12, 0.31);
 }
 .circle-text{
   padding-left: 2.75vw;
@@ -52,7 +71,10 @@
     color: #000;
   }
 }
-
+.drawer{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
 .drawer-tab {
   display:inline-block;
   color: #fff;
@@ -78,16 +100,9 @@
 .sidebar{
   height: 600px;
 }
-.part-button{
-  width: 5%;
-  height: 5%;
-  display:inline-block;
-  a:hover {
-cursor: pointer;
-}
-}
+
 .dark{
-background-color: rgba(0, 0, 0, 0.23)
+background-color: rgba(52, 139, 122, 0.69);
 }
 .light{
   background-color: rgba(255, 255, 255, 0.63);

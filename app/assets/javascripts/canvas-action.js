@@ -73,7 +73,30 @@ function tick(event) {
   }
 }
 
+$('#save').click(function(event){
+    event.preventDefault();
+    $('#monster-details').show( "slow");
+  });
 
+  $("#submit").click(function(event){
+    event.preventDefault();
+    $("#data").val(d.toDataURL());
+    $("#frm").trigger("submit");
+  });
+
+  // var myImage = new Image();
+  // myImage.crossOrigin="anonymous";
+  // myImage.src = $('#themain').data('parent-url');
+
+  $(myImage).load(function() {
+    e.drawImage(myImage, 0, 0);
+  });
+
+function saveRestorePoint() {
+  var oCanvas = document.getElementById("monsterCanvas");
+  var imgSrc = oCanvas.toDataURL("artwork/png");
+  restorePoints.push(imgSrc);
+}
 
 
 
