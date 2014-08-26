@@ -13,7 +13,8 @@
   </div>
 
   <div class="small-4 columns">
-    <%= image_tag @artwork.monsterdrawing.url(:medium) %>
+    <h4><strong><%= image_tag @artwork.monsterdrawing.url(:medium) %>
+    <%= @artwork.name %> <br>by <%= @artwork.artist %></strong></h4>
   </div>
 
   <div class="small-4 columns">

@@ -62,6 +62,10 @@ function handleClick(event) {
     update = true;
   });
 
+  bitmap.on("dblclick", function(evt) {
+    event.preventDefault();
+    $('#transform').show( "slow");
+  });
   createjs.Ticker.addEventListener("tick", tick);
 }
 
@@ -78,19 +82,19 @@ $('#save').click(function(event){
     $('#monster-details').show( "slow");
   });
 
-  $("#submit").click(function(event){
-    event.preventDefault();
-    $("#data").val($("#monsterCanvas")[0].toDataURL());
-    $("#frm").trigger("submit");
-  });
+$("#submit").click(function(event){
+  event.preventDefault();
+  $("#data").val($("#monsterCanvas")[0].toDataURL());
+  $("#frm").trigger("submit");
+});
 
-    var myImage = new Image();
-    myImage.crossOrigin="anonymous";
-  // myImage.src = $('#themain').data('parent-url');
+var myImage = new Image();
+myImage.crossOrigin="anonymous";
+// myImage.src = $('#themain').data('parent-url');
 
-  $(myImage).load(function() {
-    e.drawImage(myImage, 0, 0);
-  });
+$(myImage).load(function() {
+  e.drawImage(myImage, 0, 0);
+});
 
 function saveRestorePoint() {
   var oCanvas = document.getElementById("monsterCanvas");

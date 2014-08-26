@@ -1,10 +1,5 @@
 <%= link_to image_tag('monster-nav.png', class: "homepage"), root_path %>
-<div class="floatontop">
 
-  <div class="circle-button2" >
-    <%= link_to 'Browse', artworks_path, class: "circle-text" %>
-  </div>
-</div>
   <div class="dark">
   <div class="row">
     <div id="eyes">
@@ -70,7 +65,37 @@
   <div class="row canvas">
     <div class="small-12 large-12 columns">
       <canvas id="monsterCanvas" width="900" height="500"></canvas>
+
+
+
+</div>
     </div>
+  </div>
+  <div class="row" id="transform">
+    <div class="small-3 columns">
+      &nbsp;
+    </div>
+    <div class="small-6 columns">
+      <div class="transform-button">
+        <i class="fa fa-times fa-3x"></i>
+      </div>
+      <div class="transform-button">
+        <i class="fa fa-undo fa-3x"></i>
+      </div>
+      <div class="transform-button">
+        <i class="fa fa-rotate-right fa-3x"></i>
+      </div>
+      <div class="transform-button">
+        <i class="fa fa-expand fa-3x"></i>
+      </div>
+      <div class="transform-button">
+        <i class="fa fa-compress fa-3x"></i>
+      </div>
+    </div>
+    <div class="small-3 columns">
+      &nbsp;
+    </div>
+
   </div>
 <div class="dark">
   <div class="row">
@@ -88,12 +113,14 @@
       <div class="small-3 columns">
           Created by
           <%= f.text_field :artist, placeholder: 'Emily' %>
-        <% end %>
-
       </div>
+
        <div class="small-3 columns">
+
        <a href="#themain" class="button small" id="submit">Submit</a>
+       <% end %>
        </div>
     </div>
   </div>
 </div>
+

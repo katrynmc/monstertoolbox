@@ -22,6 +22,18 @@ monster.initialize = function() {
     {id:"sound", src:"/assets/blip.mp3"},
     ]);
 
+  $('#eyes').hide();
+  $('#mouths').hide();
+  $('#noses').hide();
+  $('#ears').hide();
+  $('#horns').hide();
+  $('#arms').hide();
+  $('#legs').hide();
+  $('#tails').hide();
+  $('#hair').hide();
+  $('#monster-details').hide();
+  $('#transform').hide();
+
   //Find all the elements with class "part-button"
   var partButton = document.getElementsByClassName("part-button");
   // Get the length of the array
@@ -36,14 +48,5 @@ monster.initialize = function() {
     }, false);
 
 
-  $('#eyes').hide();
-  $('#mouths').hide();
-  $('#noses').hide();
-  $('#ears').hide();
-  $('#horns').hide();
-  $('#arms').hide();
-  $('#legs').hide();
-  $('#tails').hide();
-  $('#hair').hide();
-  $('#monster-details').hide();
+
 };

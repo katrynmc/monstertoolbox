@@ -1,18 +1,23 @@
 <%= link_to image_tag('monster-nav.png', class: "homepage"), root_path %>
-<div class="floatontop">
-  <div class="circle-button1" >
-    <%= link_to 'Create!', new_artwork_path, class: "circle-text" %>
-  </div>
-  </div>
 <div class="row">
-  <div class="small-4 columns">
+<div class="small-12 columns">
+<h1 class="text-center">Gallery</h1>
+</div>
+</div>
+<div class="row">
+
+  <div class="small-1 columns">
+  &nbsp;
   </div>
-  <div class="small-4 columns">
-    <h1>Gallery</h1>
-    <% @artworks.each do |artwork| %>
-      <%= link_to image_tag(artwork.monsterdrawing.url(:square)), artwork_path(artwork.id) %>
-    <% end %>
+
+  <div class="small-10 columns">
+    <div class="cell">
+      <% @artworks.each do |artwork| %>
+          <%= link_to image_tag(artwork.monsterdrawing.url(:square), class: "gallery-item"), artwork_path(artwork.id) %>
+      <% end %>
+    </div>
   </div>
-  <div class="small-4 columns">
+
+  <div class="small-1 columns">
   </div>
 </div>

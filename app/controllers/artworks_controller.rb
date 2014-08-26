@@ -14,7 +14,7 @@ class ArtworksController < ApplicationController
   end
 
   def create
-    binding.pry
+
     @artwork = Artwork.new(artwork_params)
 
     if @artwork.save
