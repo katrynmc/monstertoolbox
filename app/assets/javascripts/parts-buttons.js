@@ -1,19 +1,49 @@
 //Eyes
 $( "#eyecategory" ).click(function() {
-  if ( $( "#eyes:first" ).is( ":hidden" ) ) {
-    $( "#eyes" ).show( "slow" );
+  if ( $( "#eyes" ).is( ":hidden" ) ) {
+    $( '#ears' ).hide();
+    $( '#earcategory' ).css( "background-color", "black" );
+    $( '#mouths' ).hide();
+    $( '#mouthcategory' ).css( "background-color", "black" );
+    $( '#noses' ).hide();
+    $( '#nosecategory' ).css( "background-color", "black" );
+    $( '#horns' ).hide();
+    $( '#horncategory' ).css( "background-color", "black" );
+    $( '#arms' ).hide();
+    $( '#armcategory' ).css( "background-color", "black" );
+    $( '#legs' ).hide();
+    $( '#legcategory' ).css( "background-color", "black" );
+    $( '#tails' ).hide();
+    $( '#tailcategory' ).css( "background-color", "black" );
+    $( '#hair' ).hide();
+    $( '#haircategory' ).css( "background-color", "black" );
+    $( "#eyes" ).show( "400" );
     $( this ).css( "background-color", "rgba(52, 139, 122, 0.69)" );
   } else {
     $( "#eyes" ).slideUp();
     $( this ).css( "background-color", "black" );
   }
 });
-
-
 // Mouths
 $( "#mouthcategory" ).click(function() {
-  if ( $( "#mouths:first" ).is( ":hidden" ) ) {
-    $( "#mouths" ).show( "slow" );
+  if ( $( "#mouths" ).is( ":hidden" ) ) {
+    $( '#eyes' ).hide();
+    $( '#eyecategory' ).css( "background-color", "black" );
+    $( '#ears' ).hide();
+    $( '#earcategory' ).css( "background-color", "black" );
+    $( '#noses' ).hide();
+    $( '#nosecategory' ).css( "background-color", "black" );
+    $( '#horns' ).hide();
+    $( '#horncategory' ).css( "background-color", "black" );
+    $( '#arms' ).hide();
+    $( '#armcategory' ).css( "background-color", "black" );
+    $( '#legs' ).hide();
+    $( '#legcategory' ).css( "background-color", "black" );
+    $( '#tails' ).hide();
+    $( '#tailcategory' ).css( "background-color", "black" );
+    $( '#hair' ).hide();
+    $( '#haircategory' ).css( "background-color", "black" );
+    $( "#mouths" ).show( "400" );
     $( this ).css( "background-color", "rgba(52, 139, 122, 0.69)" );
   } else {
     $( "#mouths" ).slideUp();
@@ -22,8 +52,24 @@ $( "#mouthcategory" ).click(function() {
 });
 // Noses
 $( "#nosecategory" ).click(function() {
-  if ( $( "#noses:first" ).is( ":hidden" ) ) {
-    $( "#noses" ).show( "slow" );
+  if ( $( "#noses" ).is( ":hidden" ) ) {
+    $( '#eyes' ).hide();
+    $( '#eyecategory' ).css( "background-color", "black" );
+    $( '#mouths' ).hide();
+    $( '#mouthcategory' ).css( "background-color", "black" );
+    $( '#ears' ).hide();
+    $( '#earcategory' ).css( "background-color", "black" );
+    $( '#horns' ).hide();
+    $( '#horncategory' ).css( "background-color", "black" );
+    $( '#arms' ).hide();
+    $( '#armcategory' ).css( "background-color", "black" );
+    $( '#legs' ).hide();
+    $( '#legcategory' ).css( "background-color", "black" );
+    $( '#tails' ).hide();
+    $( '#tailcategory' ).css( "background-color", "black" );
+    $( '#hair' ).hide();
+    $( '#haircategory' ).css( "background-color", "black" );
+    $( "#noses" ).show( "400" );
     $( this ).css( "background-color", "rgba(52, 139, 122, 0.69)" );
   } else {
     $( "#noses" ).slideUp();
@@ -32,8 +78,24 @@ $( "#nosecategory" ).click(function() {
 });
 // Ears
 $( "#earcategory" ).click(function() {
-  if ( $( "#ears:first" ).is( ":hidden" ) ) {
-    $( "#ears" ).show( "slow" );
+  if ( $( "#ears" ).is( ":hidden" ) ) {
+    $( '#eyes' ).hide();
+    $( '#eyecategory' ).css( "background-color", "black" );
+    $( '#mouths' ).hide();
+    $( '#mouthcategory' ).css( "background-color", "black" );
+    $( '#noses' ).hide();
+    $( '#nosecategory' ).css( "background-color", "black" );
+    $( '#horns' ).hide();
+    $( '#horncategory' ).css( "background-color", "black" );
+    $( '#arms' ).hide();
+    $( '#armcategory' ).css( "background-color", "black" );
+    $( '#legs' ).hide();
+    $( '#legcategory' ).css( "background-color", "black" );
+    $( '#tails' ).hide();
+    $( '#tailcategory' ).css( "background-color", "black" );
+    $( '#hair' ).hide();
+    $( '#haircategory' ).css( "background-color", "black" );
+    $( "#ears" ).show( "400" );
     $( this ).css( "background-color", "rgba(52, 139, 122, 0.69)" );
   } else {
     $( "#ears" ).slideUp();
@@ -42,8 +104,24 @@ $( "#earcategory" ).click(function() {
 });
 // Horns
 $( "#horncategory" ).click(function() {
-  if ( $( "#horns:first" ).is( ":hidden" ) ) {
-    $( "#horns" ).show( "slow" );
+  if ( $( "#horns" ).is( ":hidden" ) ) {
+    $( '#eyes' ).hide();
+    $( '#eyecategory' ).css( "background-color", "black" );
+    $( '#mouths' ).hide();
+    $( '#mouthcategory' ).css( "background-color", "black" );
+    $( '#noses' ).hide();
+    $( '#nosecategory' ).css( "background-color", "black" );
+    $( '#ears' ).hide();
+    $( '#earcategory' ).css( "background-color", "black" );
+    $( '#arms' ).hide();
+    $( '#armcategory' ).css( "background-color", "black" );
+    $( '#legs' ).hide();
+    $( '#legcategory' ).css( "background-color", "black" );
+    $( '#tails' ).hide();
+    $( '#tailcategory' ).css( "background-color", "black" );
+    $( '#hair' ).hide();
+    $( '#haircategory' ).css( "background-color", "black" );
+    $( "#horns" ).show( "400" );
     $( this ).css( "background-color", "rgba(52, 139, 122, 0.69)" );
   } else {
     $( "#horns" ).slideUp();
@@ -52,8 +130,24 @@ $( "#horncategory" ).click(function() {
 });
 // Arms
 $( "#armcategory" ).click(function() {
-  if ( $( "#arms:first" ).is( ":hidden" ) ) {
-    $( "#arms" ).show( "slow" );
+  if ( $( "#arms" ).is( ":hidden" ) ) {
+    $( '#eyes' ).hide();
+    $( '#eyecategory' ).css( "background-color", "black" );
+    $( '#mouths' ).hide();
+    $( '#mouthcategory' ).css( "background-color", "black" );
+    $( '#noses' ).hide();
+    $( '#nosecategory' ).css( "background-color", "black" );
+    $( '#horns' ).hide();
+    $( '#horncategory' ).css( "background-color", "black" );
+    $( '#ears' ).hide();
+    $( '#earcategory' ).css( "background-color", "black" );
+    $( '#legs' ).hide();
+    $( '#legcategory' ).css( "background-color", "black" );
+    $( '#tails' ).hide();
+    $( '#tailcategory' ).css( "background-color", "black" );
+    $( '#hair' ).hide();
+    $( '#haircategory' ).css( "background-color", "black" );
+    $( "#arms" ).show( "400" );
     $( this ).css( "background-color", "rgba(52, 139, 122, 0.69)" );
   } else {
     $( "#arms" ).slideUp();
@@ -62,8 +156,24 @@ $( "#armcategory" ).click(function() {
 });
 // Legs
 $( "#legcategory" ).click(function() {
-  if ( $( "#legs:first" ).is( ":hidden" ) ) {
-    $( "#legs" ).show( "slow" );
+  if ( $( "#legs" ).is( ":hidden" ) ) {
+    $( '#eyes' ).hide();
+    $( '#eyecategory' ).css( "background-color", "black" );
+    $( '#mouths' ).hide();
+    $( '#mouthcategory' ).css( "background-color", "black" );
+    $( '#noses' ).hide();
+    $( '#nosecategory' ).css( "background-color", "black" );
+    $( '#horns' ).hide();
+    $( '#horncategory' ).css( "background-color", "black" );
+    $( '#arms' ).hide();
+    $( '#armcategory' ).css( "background-color", "black" );
+    $( '#ears' ).hide();
+    $( '#earcategory' ).css( "background-color", "black" );
+    $( '#tails' ).hide();
+    $( '#tailcategory' ).css( "background-color", "black" );
+    $( '#hair' ).hide();
+    $( '#haircategory' ).css( "background-color", "black" );
+    $( "#legs" ).show( "400" );
     $( this ).css( "background-color", "rgba(52, 139, 122, 0.69)" );
   } else {
     $( "#legs" ).slideUp();
@@ -72,8 +182,24 @@ $( "#legcategory" ).click(function() {
 });
 // Tails
 $( "#tailcategory" ).click(function() {
-  if ( $( "#tails:first" ).is( ":hidden" ) ) {
-    $( "#tails" ).show( "slow" );
+  if ( $( "#tails" ).is( ":hidden" ) ) {
+    $( '#eyes' ).hide();
+    $( '#eyecategory' ).css( "background-color", "black" );
+    $( '#mouths' ).hide();
+    $( '#mouthcategory' ).css( "background-color", "black" );
+    $( '#noses' ).hide();
+    $( '#nosecategory' ).css( "background-color", "black" );
+    $( '#horns' ).hide();
+    $( '#horncategory' ).css( "background-color", "black" );
+    $( '#arms' ).hide();
+    $( '#armcategory' ).css( "background-color", "black" );
+    $( '#legs' ).hide();
+    $( '#legcategory' ).css( "background-color", "black" );
+    $( '#ears' ).hide();
+    $( '#earcategory' ).css( "background-color", "black" );
+    $( '#hair' ).hide();
+    $( '#haircategory' ).css( "background-color", "black" );
+    $( "#tails" ).show( "400" );
     $( this ).css( "background-color", "rgba(52, 139, 122, 0.69)" );
   } else {
     $( "#tails" ).slideUp();
@@ -82,8 +208,24 @@ $( "#tailcategory" ).click(function() {
 });
 // Hair
 $( "#haircategory" ).click(function() {
-  if ( $( "#hair:first" ).is( ":hidden" ) ) {
-    $( "#hair" ).show( "slow" );
+  if ( $( "#hair" ).is( ":hidden" ) ) {
+    $( '#eyes' ).hide();
+    $( '#eyecategory' ).css( "background-color", "black" );
+    $( '#mouths' ).hide();
+    $( '#mouthcategory' ).css( "background-color", "black" );
+    $( '#noses' ).hide();
+    $( '#nosecategory' ).css( "background-color", "black" );
+    $( '#horns' ).hide();
+    $( '#horncategory' ).css( "background-color", "black" );
+    $( '#arms' ).hide();
+    $( '#armcategory' ).css( "background-color", "black" );
+    $( '#legs' ).hide();
+    $( '#legcategory' ).css( "background-color", "black" );
+    $( '#tails' ).hide();
+    $( '#tailcategory' ).css( "background-color", "black" );
+    $( '#ears' ).hide();
+    $( '#earcategory' ).css( "background-color", "black" );
+    $( "#hair" ).show( "400" );
     $( this ).css( "background-color", "rgba(52, 139, 122, 0.69)" );
   } else {
     $( "#hair" ).slideUp();
