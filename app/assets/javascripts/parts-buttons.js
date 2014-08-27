@@ -1,23 +1,23 @@
 //Eyes
 $( "#eyecategory" ).click(function() {
   if ( $( "#eyes" ).is( ":hidden" ) ) {
-    $( '#ears' ).hide();
+    $( '#ears' ).hide( "slow" );
     $( '#earcategory' ).css( "background-color", "black" );
-    $( '#mouths' ).hide();
+    $( '#mouths' ).hide( "slow" );
     $( '#mouthcategory' ).css( "background-color", "black" );
-    $( '#noses' ).hide();
+    $( '#noses' ).hide( "slow" );
     $( '#nosecategory' ).css( "background-color", "black" );
-    $( '#horns' ).hide();
+    $( '#horns' ).hide( "slow" );
     $( '#horncategory' ).css( "background-color", "black" );
-    $( '#arms' ).hide();
+    $( '#arms' ).hide( "slow" );
     $( '#armcategory' ).css( "background-color", "black" );
-    $( '#legs' ).hide();
+    $( '#legs' ).hide( "slow" );
     $( '#legcategory' ).css( "background-color", "black" );
-    $( '#tails' ).hide();
+    $( '#tails' ).hide( "slow" );
     $( '#tailcategory' ).css( "background-color", "black" );
-    $( '#hair' ).hide();
+    $( '#hair' ).hide( "slow" );
     $( '#haircategory' ).css( "background-color", "black" );
-    $( "#eyes" ).show( "400" );
+    $( "#eyes" ).show( "slow" );
     $( this ).css( "background-color", "rgba(52, 139, 122, 0.69)" );
   } else {
     $( "#eyes" ).slideUp();
@@ -27,23 +27,23 @@ $( "#eyecategory" ).click(function() {
 // Mouths
 $( "#mouthcategory" ).click(function() {
   if ( $( "#mouths" ).is( ":hidden" ) ) {
-    $( '#eyes' ).hide();
+    $( '#eyes' ).hide( "slow" );
     $( '#eyecategory' ).css( "background-color", "black" );
-    $( '#ears' ).hide();
+    $( '#ears' ).hide( "slow" );
     $( '#earcategory' ).css( "background-color", "black" );
-    $( '#noses' ).hide();
+    $( '#noses' ).hide( "slow" );
     $( '#nosecategory' ).css( "background-color", "black" );
-    $( '#horns' ).hide();
+    $( '#horns' ).hide( "slow" );
     $( '#horncategory' ).css( "background-color", "black" );
-    $( '#arms' ).hide();
+    $( '#arms' ).hide( "slow" );
     $( '#armcategory' ).css( "background-color", "black" );
-    $( '#legs' ).hide();
+    $( '#legs' ).hide( "slow" );
     $( '#legcategory' ).css( "background-color", "black" );
-    $( '#tails' ).hide();
+    $( '#tails' ).hide( "slow" );
     $( '#tailcategory' ).css( "background-color", "black" );
-    $( '#hair' ).hide();
+    $( '#hair' ).hide( "slow" );
     $( '#haircategory' ).css( "background-color", "black" );
-    $( "#mouths" ).show( "400" );
+    $( "#mouths" ).show( "slow" );
     $( this ).css( "background-color", "rgba(52, 139, 122, 0.69)" );
   } else {
     $( "#mouths" ).slideUp();
@@ -53,23 +53,23 @@ $( "#mouthcategory" ).click(function() {
 // Noses
 $( "#nosecategory" ).click(function() {
   if ( $( "#noses" ).is( ":hidden" ) ) {
-    $( '#eyes' ).hide();
+    $( '#eyes' ).hide( "slow" );
     $( '#eyecategory' ).css( "background-color", "black" );
-    $( '#mouths' ).hide();
+    $( '#mouths' ).hide( "slow" );
     $( '#mouthcategory' ).css( "background-color", "black" );
-    $( '#ears' ).hide();
+    $( '#ears' ).hide( "slow" );
     $( '#earcategory' ).css( "background-color", "black" );
-    $( '#horns' ).hide();
+    $( '#horns' ).hide( "slow" );
     $( '#horncategory' ).css( "background-color", "black" );
-    $( '#arms' ).hide();
+    $( '#arms' ).hide( "slow" );
     $( '#armcategory' ).css( "background-color", "black" );
-    $( '#legs' ).hide();
+    $( '#legs' ).hide( "slow" );
     $( '#legcategory' ).css( "background-color", "black" );
-    $( '#tails' ).hide();
+    $( '#tails' ).hide( "slow" );
     $( '#tailcategory' ).css( "background-color", "black" );
-    $( '#hair' ).hide();
+    $( '#hair' ).hide( "slow" );
     $( '#haircategory' ).css( "background-color", "black" );
-    $( "#noses" ).show( "400" );
+    $( "#noses" ).show( "slow" );
     $( this ).css( "background-color", "rgba(52, 139, 122, 0.69)" );
   } else {
     $( "#noses" ).slideUp();
@@ -79,23 +79,23 @@ $( "#nosecategory" ).click(function() {
 // Ears
 $( "#earcategory" ).click(function() {
   if ( $( "#ears" ).is( ":hidden" ) ) {
-    $( '#eyes' ).hide();
+    $( '#eyes' ).hide( "slow" );
     $( '#eyecategory' ).css( "background-color", "black" );
-    $( '#mouths' ).hide();
+    $( '#mouths' ).hide( "slow" );
     $( '#mouthcategory' ).css( "background-color", "black" );
-    $( '#noses' ).hide();
+    $( '#noses' ).hide( "slow" );
     $( '#nosecategory' ).css( "background-color", "black" );
-    $( '#horns' ).hide();
+    $( '#horns' ).hide( "slow" );
     $( '#horncategory' ).css( "background-color", "black" );
-    $( '#arms' ).hide();
+    $( '#arms' ).hide( "slow" );
     $( '#armcategory' ).css( "background-color", "black" );
-    $( '#legs' ).hide();
+    $( '#legs' ).hide( "slow" );
     $( '#legcategory' ).css( "background-color", "black" );
-    $( '#tails' ).hide();
+    $( '#tails' ).hide( "slow" );
     $( '#tailcategory' ).css( "background-color", "black" );
-    $( '#hair' ).hide();
+    $( '#hair' ).hide( "slow" );
     $( '#haircategory' ).css( "background-color", "black" );
-    $( "#ears" ).show( "400" );
+    $( "#ears" ).show( "slow" );
     $( this ).css( "background-color", "rgba(52, 139, 122, 0.69)" );
   } else {
     $( "#ears" ).slideUp();
@@ -105,23 +105,23 @@ $( "#earcategory" ).click(function() {
 // Horns
 $( "#horncategory" ).click(function() {
   if ( $( "#horns" ).is( ":hidden" ) ) {
-    $( '#eyes' ).hide();
+    $( '#eyes' ).hide( "slow" );
     $( '#eyecategory' ).css( "background-color", "black" );
-    $( '#mouths' ).hide();
+    $( '#mouths' ).hide( "slow" );
     $( '#mouthcategory' ).css( "background-color", "black" );
-    $( '#noses' ).hide();
+    $( '#noses' ).hide( "slow" );
     $( '#nosecategory' ).css( "background-color", "black" );
-    $( '#ears' ).hide();
+    $( '#ears' ).hide( "slow" );
     $( '#earcategory' ).css( "background-color", "black" );
-    $( '#arms' ).hide();
+    $( '#arms' ).hide( "slow" );
     $( '#armcategory' ).css( "background-color", "black" );
-    $( '#legs' ).hide();
+    $( '#legs' ).hide( "slow" );
     $( '#legcategory' ).css( "background-color", "black" );
-    $( '#tails' ).hide();
+    $( '#tails' ).hide( "slow" );
     $( '#tailcategory' ).css( "background-color", "black" );
-    $( '#hair' ).hide();
+    $( '#hair' ).hide( "slow" );
     $( '#haircategory' ).css( "background-color", "black" );
-    $( "#horns" ).show( "400" );
+    $( "#horns" ).show( "slow" );
     $( this ).css( "background-color", "rgba(52, 139, 122, 0.69)" );
   } else {
     $( "#horns" ).slideUp();
@@ -131,23 +131,23 @@ $( "#horncategory" ).click(function() {
 // Arms
 $( "#armcategory" ).click(function() {
   if ( $( "#arms" ).is( ":hidden" ) ) {
-    $( '#eyes' ).hide();
+    $( '#eyes' ).hide( "slow" );
     $( '#eyecategory' ).css( "background-color", "black" );
-    $( '#mouths' ).hide();
+    $( '#mouths' ).hide( "slow" );
     $( '#mouthcategory' ).css( "background-color", "black" );
-    $( '#noses' ).hide();
+    $( '#noses' ).hide( "slow" );
     $( '#nosecategory' ).css( "background-color", "black" );
-    $( '#horns' ).hide();
+    $( '#horns' ).hide( "slow" );
     $( '#horncategory' ).css( "background-color", "black" );
-    $( '#ears' ).hide();
+    $( '#ears' ).hide( "slow" );
     $( '#earcategory' ).css( "background-color", "black" );
-    $( '#legs' ).hide();
+    $( '#legs' ).hide( "slow" );
     $( '#legcategory' ).css( "background-color", "black" );
-    $( '#tails' ).hide();
+    $( '#tails' ).hide( "slow" );
     $( '#tailcategory' ).css( "background-color", "black" );
-    $( '#hair' ).hide();
+    $( '#hair' ).hide( "slow" );
     $( '#haircategory' ).css( "background-color", "black" );
-    $( "#arms" ).show( "400" );
+    $( "#arms" ).show( "slow" );
     $( this ).css( "background-color", "rgba(52, 139, 122, 0.69)" );
   } else {
     $( "#arms" ).slideUp();
@@ -157,23 +157,23 @@ $( "#armcategory" ).click(function() {
 // Legs
 $( "#legcategory" ).click(function() {
   if ( $( "#legs" ).is( ":hidden" ) ) {
-    $( '#eyes' ).hide();
+    $( '#eyes' ).hide( "slow" );
     $( '#eyecategory' ).css( "background-color", "black" );
-    $( '#mouths' ).hide();
+    $( '#mouths' ).hide( "slow" );
     $( '#mouthcategory' ).css( "background-color", "black" );
-    $( '#noses' ).hide();
+    $( '#noses' ).hide( "slow" );
     $( '#nosecategory' ).css( "background-color", "black" );
-    $( '#horns' ).hide();
+    $( '#horns' ).hide( "slow" );
     $( '#horncategory' ).css( "background-color", "black" );
-    $( '#arms' ).hide();
+    $( '#arms' ).hide( "slow" );
     $( '#armcategory' ).css( "background-color", "black" );
-    $( '#ears' ).hide();
+    $( '#ears' ).hide( "slow" );
     $( '#earcategory' ).css( "background-color", "black" );
-    $( '#tails' ).hide();
+    $( '#tails' ).hide( "slow" );
     $( '#tailcategory' ).css( "background-color", "black" );
-    $( '#hair' ).hide();
+    $( '#hair' ).hide( "slow" );
     $( '#haircategory' ).css( "background-color", "black" );
-    $( "#legs" ).show( "400" );
+    $( "#legs" ).show( "slow" );
     $( this ).css( "background-color", "rgba(52, 139, 122, 0.69)" );
   } else {
     $( "#legs" ).slideUp();
@@ -183,23 +183,23 @@ $( "#legcategory" ).click(function() {
 // Tails
 $( "#tailcategory" ).click(function() {
   if ( $( "#tails" ).is( ":hidden" ) ) {
-    $( '#eyes' ).hide();
+    $( '#eyes' ).hide( "slow" );
     $( '#eyecategory' ).css( "background-color", "black" );
-    $( '#mouths' ).hide();
+    $( '#mouths' ).hide( "slow" );
     $( '#mouthcategory' ).css( "background-color", "black" );
-    $( '#noses' ).hide();
+    $( '#noses' ).hide( "slow" );
     $( '#nosecategory' ).css( "background-color", "black" );
-    $( '#horns' ).hide();
+    $( '#horns' ).hide( "slow" );
     $( '#horncategory' ).css( "background-color", "black" );
-    $( '#arms' ).hide();
+    $( '#arms' ).hide( "slow" );
     $( '#armcategory' ).css( "background-color", "black" );
-    $( '#legs' ).hide();
+    $( '#legs' ).hide( "slow" );
     $( '#legcategory' ).css( "background-color", "black" );
-    $( '#ears' ).hide();
+    $( '#ears' ).hide( "slow" );
     $( '#earcategory' ).css( "background-color", "black" );
-    $( '#hair' ).hide();
+    $( '#hair' ).hide( "slow" );
     $( '#haircategory' ).css( "background-color", "black" );
-    $( "#tails" ).show( "400" );
+    $( "#tails" ).show( "slow" );
     $( this ).css( "background-color", "rgba(52, 139, 122, 0.69)" );
   } else {
     $( "#tails" ).slideUp();
@@ -209,23 +209,23 @@ $( "#tailcategory" ).click(function() {
 // Hair
 $( "#haircategory" ).click(function() {
   if ( $( "#hair" ).is( ":hidden" ) ) {
-    $( '#eyes' ).hide();
+    $( '#eyes' ).hide( "slow" );
     $( '#eyecategory' ).css( "background-color", "black" );
-    $( '#mouths' ).hide();
+    $( '#mouths' ).hide( "slow" );
     $( '#mouthcategory' ).css( "background-color", "black" );
-    $( '#noses' ).hide();
+    $( '#noses' ).hide( "slow" );
     $( '#nosecategory' ).css( "background-color", "black" );
-    $( '#horns' ).hide();
+    $( '#horns' ).hide( "slow" );
     $( '#horncategory' ).css( "background-color", "black" );
-    $( '#arms' ).hide();
+    $( '#arms' ).hide( "slow" );
     $( '#armcategory' ).css( "background-color", "black" );
-    $( '#legs' ).hide();
+    $( '#legs' ).hide( "slow" );
     $( '#legcategory' ).css( "background-color", "black" );
-    $( '#tails' ).hide();
+    $( '#tails' ).hide( "slow" );
     $( '#tailcategory' ).css( "background-color", "black" );
-    $( '#ears' ).hide();
+    $( '#ears' ).hide( "slow" );
     $( '#earcategory' ).css( "background-color", "black" );
-    $( "#hair" ).show( "400" );
+    $( "#hair" ).show( "slow" );
     $( this ).css( "background-color", "rgba(52, 139, 122, 0.69)" );
   } else {
     $( "#hair" ).slideUp();
