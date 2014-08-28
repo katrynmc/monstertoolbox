@@ -5,17 +5,13 @@
 </div>
 </div>
 <div class="row">
-
-
-
   <div class="small-12 columns">
-  <div class="grid">
-    <% @artworks.each do |artwork| %>
-      <div class="cell">
-          <%= link_to image_tag(artwork.monsterdrawing.url(:square), class: "gallery-item"), artwork_path(artwork.id) %>
-      </div>
-    <% end %>
+    <div class="grid">
+      <% @artworks.each do |artwork| %>
+        <div class="cell">
+            <%= link_to image_tag(artwork.monsterdrawing.url(:square), class: "gallery-item"), artwork_path(artwork.id) %>
+        </div>
+      <% end %>
+    </div>
   </div>
-
-</div>
 </div>

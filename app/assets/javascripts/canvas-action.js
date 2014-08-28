@@ -5,6 +5,9 @@ var offset;
 var update = true;
 var index = 0;
 var currentBitmap;
+var currentBorder;
+var rotation;
+
 function stop() {
   createjs.Ticker.removeEventListener("tick", tick);
 }
@@ -27,8 +30,9 @@ function handleClick(event) {
 
   bitmap.regX = bitmap.image.width/2|0;
   bitmap.regY = bitmap.image.height/2|0;
-  //Set initial scale to 1
-  bitmap.scaleX = bitmap.scaleY = bitmap.scale = 1;
+  //Set initial scale to 0.5 (half of total size of image)
+  bitmap.scaleX = bitmap.scaleY = bitmap.scale = 0.5;
+  rotation = 0;
   // name the bitmap
   bitmap.name = "bmp_"+index;
   // Convert cursor to pointer when you hover over the object
@@ -65,16 +69,33 @@ function handleClick(event) {
 
   bitmap.on("dblclick", function(evt) {
     event.preventDefault();
+    var border = new createjs.Shape();
+    border.graphics.beginStroke("red");
+    border.graphics.setStrokeStyle(0.5);
+    border.snapToPixel = true;
+    border.graphics.drawRect(0, 0, 100, 100);
+    border.x = this.x - 30;
+    border.y = this.y - 30;
+
+    stage.addChild(border);
+    stage.update();
+    currentBorder = border;
+
 
     $('#transform').show( "slow");
+
       $("#remove-button").click(function(event){
         container.removeChildAt(0);
+        stage.removeChild(currentBorder);
         update = true;
         $('#transform').hide( "slow" );
       });
-    // $("#rotate-left").click(function(event){
+    $("#rotate-left").click(function(event){
+        currentBitmap.rotation(rotation + 45);
+        update = true;
 
-    // }
+      });
+
     // $("#rotate-right").click(function(event){
     //   bitmap.rotation += 30;
     // }
