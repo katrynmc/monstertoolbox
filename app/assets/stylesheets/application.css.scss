@@ -3,7 +3,7 @@
 
 .title {
   font-family: 'Codystar', cursive;
-  font-size: 5em;
+  font-size: 4.8em;
   color: #fff;
   line-height: 1.3em;
   text-align: center;
@@ -23,14 +23,12 @@
   z-index: 2;
 }
 .pb-circle {
-  background-color: #fff;
+  background-color: #000;
   height: 3.5em;
   width: 3.5em;
   padding: 0.6em;
   border-radius: 50%;
-  -moz-box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 2, 0.41);
-  -webkit-box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 2, 0.41);
-  box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 2, 0.41);
+
   a:hover {
     cursor: pointer;
   }
@@ -90,72 +88,51 @@
 .drawer{
   margin-top: 0.5em;
   margin-bottom: 1em;
+
 }
 
 .drawer-tab {
-  width: 0px;
-  height: 0px;
-  border-style: inset;
-  border-width: 70px 50px 0 50px;
-  border-color: #ffffff transparent transparent transparent;
-  float: left;
-  transform:rotate(360deg);
-  -ms-transform:rotate(360deg);
-  -moz-transform:rotate(360deg);
-  -webkit-transform:rotate(360deg);
-  -o-transform:rotate(360deg);
+  width: 0;
+  height: 0;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+  border-top:70px solid #fff;
+  font-size: 0;
+  line-height: 0;
+  display: inline-block;
+
   p {
     text-align: center;
-    top: 30px;
-    left: -47px;
+    top: -60px;
+    left: -25px;
     position: relative;
     width: 50px;
     height: 50px;
     margin: 0px;
+    color: rgba(255, 0, 0, 0.57);
+    font-weight: 600;
+    font-size: 14px;
+    :hover{
+      color:red;
+    }
   }
   a {
   color: #fff;
   }
 }
 
-  // width: 0;
-  // height: 0;
-  // border-left: 85px solid transparent;
-  // border-right: 85px solid transparent;
-  // border-top: 100px solid #fff;
 
-
-
-  // display:inline-block;
-  // color: rgba(255, 0, 0, 0.57);
-  // font-weight: bold;
-  // // background-color: #fff;
-  // // height: 45px;
-  // // width: 85px;
-  // // margin-left: 20px;
-  // // margin-bottom: 10px;
-  // margin-top: 3px;
-  // font-size: 14px;
-  // padding-top: 10px;
-  // text-align: center;
-  // border-radius: 0px 0px 200px 200px;
-  // -moz-border-radius: 0px 0px 200px 200px;
-  // -webkit-border-radius: 0px 0px 200px 200px;
 
 .drawer-tab-no-click {
-  display:inline-block;
-  color: rgba(255, 0, 0, 0.57);
-  background-color: #fff;
-  height: 45px;
-  width: 85px;
-  margin-left: 20px;
-  margin-top: 10px;
-  font-size: 14px;
-  padding-top: 10px;
-  text-align: center;
-  border-radius: 200px 200px 0px 0px;
-  -moz-border-radius: 200px 200px 0px 0px;
-  -webkit-border-radius: 200px 200px 0px 0px;
+  width: 0;
+  height: 0;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+  border-bottom:70px solid #fff;
+  font-size: 0;
+  line-height: 0;
+  display: inline-block;
+
 }
 
 .canvas{
@@ -202,9 +179,14 @@
   margin: 1em auto;
 }
 
+#transform {
+  margin-top: 1em;
+}
+
 .transform-button {
   margin-bottom: 1em;
   display: inline-block;
+  color: #fff;
 }
 
 .cancel{
@@ -221,32 +203,29 @@
 }
 
 .status-button {
-    background: #CCCFD3;
-    border-radius: 15px;
-    padding: 10px 20px;
-    display: inline-block;
-    font-family: helvetica;
-    font-weight: bold;
-    color:#fff;
-    text-decoration: none;
-    text-align: center;
-    width: 100px;
+
     margin-top:10px;
     margin-bottom: 20px;
 
-  a:hover {
-    box-shadow: 0px 2px 1px white inset, 0px -2px 20px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
-  }
-  a:active {
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5) inset, 0px -2px 20px white, 0px 1px 5px rgba(0, 0, 0, 0.1), 0px 2px 10px rgba(0, 0, 0, 0.1);
-    background:-webkit-linear-gradient(top, #d1d1d1 0%,#ECECEC 100%);
-  }
+}
+.submit-button {
+
 }
 .by-line {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   font-size: 0.8em;
   line-height: 1.3em;
+  background-color: #fff;
+}
+#monster-details{
+
+  margin-top: 10px;
+  margin-bottom: 3em;
+  p {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
 }
 /* Add imports of custom sass/scss files here *//*
  * This is a manifest file that'll be compiled into application.css, which will include all the files

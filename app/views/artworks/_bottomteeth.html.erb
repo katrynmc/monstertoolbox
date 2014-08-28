@@ -1,0 +1,59 @@
+<div class="gums">
+  <div class="row">
+    <div class="drawer-tab-no-click"></div>
+    <div class="drawer-tab-no-click"></div>
+    <div class="drawer-tab-no-click"></div>
+    <div class="drawer-tab-no-click"></div>
+    <div class="drawer-tab-no-click"></div>
+    <div class="drawer-tab-no-click"></div>
+    <div class="drawer-tab-no-click"></div>
+    <div class="drawer-tab-no-click"></div>
+    <div class="drawer-tab-no-click"></div>
+  </div>
+</div>
+<div class="pre-gums"></div>
+
+<!-- Start footer -->
+<div class="footer">
+  <div class="row">
+
+    <div class="small-3 columns">
+      <div class="button small status-button" id="clear">Clear</div>
+      <div class="button small" id="save">Save</div>
+    </div>
+
+    <!-- This div is hidden by default -->
+    <div id="monster-details">
+      <div class="small-3 columns">
+        <%= form_for @artwork, url: {controller: 'artworks', action: 'create'}, html: {id: 'frm'} do |f| %>
+          <%= f.hidden_field :monsterdrawing, id: 'data' %>
+          <p>Title</p>
+          <%= f.text_field :name, placeholder: 'Harold' %>
+      </div>
+
+      <div class="small-3 columns">
+          <p>Created by</p>
+          <%= f.text_field :artist, placeholder: 'Emily' %>
+      </div>
+
+       <div class="small-3 columns">
+         <a href="#themain" class="button small" id="submit">Submit</a>
+         <% end %>
+       </div>
+
+    </div> <!-- End monter details section -->
+
+  </div> <!-- End Row -->
+</div> <!-- End footer -->
+<!-- Sub footer -->
+<div class="light">
+  <div class="row ">
+    <div class="small-12 columns">
+      <div class="by-line">
+        Created by <%= link_to "Katryn McIntosh", "http://linkedin.com/in/katrynmcintosh" %> | <strong>GA Boston </strong>Summer 2014<br>
+        <i class="fa fa-code-fork"></i> <%= link_to 'Github Repo', "http://github.com/testkitschen/monstertoolbox" %>
+      </div> <!-- End by-line -->
+    </div> <!-- End 12 columns -->
+  </div> <!-- End row -->
+</div> <!-- End light -->
+
