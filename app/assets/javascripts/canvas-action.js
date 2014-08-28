@@ -5,6 +5,7 @@ var offset;
 var update = true;
 var index = 0;
 var currentBitmap;
+var tempContainer;
 var currentBorder;
 var rotation;
 
@@ -68,8 +69,15 @@ function handleClick(event) {
   });
 
   bitmap.on("dblclick", function(evt) {
-    event.preventDefault();
+    if (tempContainer !== undefined){
+      tempContainer.removeChildAt(0);
+    }
+    // event.preventDefault();
+    currentBitmap = bitmap;
     var border = new createjs.Shape();
+    tempContainer = new createjs.Container();
+    stage.addChild(tempContainer);
+
     border.graphics.beginStroke("red");
     border.graphics.setStrokeStyle(0.5);
     border.snapToPixel = true;
@@ -77,22 +85,29 @@ function handleClick(event) {
     border.x = this.x - 30;
     border.y = this.y - 30;
 
-    stage.addChild(border);
+    tempContainer.addChild(border);
     stage.update();
     currentBorder = border;
 
-
+//For some reason it's removing multiple bitmaps?!?!?!
     $('#transform').show( "slow");
 
       $("#remove-button").click(function(event){
         container.removeChildAt(0);
-        stage.removeChild(currentBorder);
+        tempContainer.removeChildAt(0);
         update = true;
         $('#transform').hide( "slow" );
       });
+
     $("#rotate-left").click(function(event){
-        currentBitmap.rotation(rotation + 45);
+        currentBitmap.rotation(rotatepoint += 45);
         update = true;
+
+      });
+    $("#cancel").click(function(event){
+        tempContainer.removeChildAt(0);
+        update = true;
+        $('#transform').hide( "slow" );
 
       });
 
