@@ -1,110 +1,174 @@
-<%= link_to image_tag('monster-nav.png', class: "homepage"), root_path %>
+<div class="footer">
+  <div class="title">
+    <%= link_to "Monster Toolbox", root_path %>
+  </div>
+</div>
 
+<div class="row">
   <div class="dark">
-  <div class="row">
+
     <div id="eyes">
       <div class="small-12 columns" >
         <%= render "eyes" %>
       </div>
     </div>
+
     <div id="mouths">
       <div class="small-12 columns" >
         <%= render "mouths" %>
       </div>
     </div>
+
     <div id="noses">
       <div class="small-12 columns" >
         <%= render "noses" %>
       </div>
     </div>
+
     <div id="ears">
       <div class="small-12 columns" >
         <%= render "ears" %>
       </div>
     </div>
+
     <div id="horns">
       <div class="small-12 columns" >
         <%= render "horns" %>
       </div>
     </div>
+
     <div id="arms">
       <div class="small-12 columns" >
         <%= render "arms" %>
       </div>
     </div>
+
     <div id="legs">
       <div class="small-12 columns" >
         <%= render "legs" %>
       </div>
     </div>
+
     <div id="tails">
       <div class="small-12 columns" >
         <%= render "tails" %>
       </div>
     </div>
+
     <div id="hair">
       <div class="small-12 columns" >
         <%= render "hair" %>
       </div>
     </div>
-  </div>
-</div>
-<div class="row">
-  <div class="drawer-tab" id="eyecategory">EYES</div>
-  <div class="drawer-tab" id="mouthcategory">MOUTHS</div>
-  <div class="drawer-tab" id="nosecategory">NOSES</div>
-  <div class="drawer-tab" id="earcategory">EARS</div>
-  <div class="drawer-tab" id="horncategory">HORNS</div>
-  <div class="drawer-tab" id="armcategory">ARMS</div>
-  <div class="drawer-tab" id="legcategory">LEGS</div>
-  <div class="drawer-tab" id="tailcategory">TAILS</div>
-  <div class="drawer-tab" id="haircategory">HAIR</div>
-</div>
 
-<div class="row canvas">
-  <div class="small-2 large-2 columns">
-    <div id="transform">
-      <div class="transform-button" id="remove-button">
-          <i class="fa fa-trash-o fa-2x"></i>
-      </div><br>
-      <div class="transform-button" id="rotate-left">
-        <i class="fa fa-undo fa-2x"></i>
-      </div><br>
-      <div class="transform-button" id="rotate-right">
-        <i class="fa fa-rotate-right fa-2x"></i>
-      </div><br>
-      <div class="transform-button " id="bigger">
-        <i class="fa fa-expand fa-2x"></i>
-      </div><br>
-      <div class="transform-button" id="smaller">
-        <i class="fa fa-compress fa-2x"></i>
-      </div><br>
-      <div class="transform-button" id="flip-vertical">
-        <i class="fa fa-arrows-v fa-2x"></i>
-      </div><br>
-      <div class="transform-button" id="flip-horizontal">
-        <i class="fa fa-arrows-h fa-2x"></i>
-      </div><br>
-      <div class="transform-button cancel" id="cancel">
-        <i class="fa fa-times fa-2x"></i>
-      </div>
+  </div><!-- End dark -->
+</div> <!-- End row -->
 
-    </div>
-  </div>
-  <div class="small-8 large-8 columns">
-      <canvas id="monsterCanvas" width="900" height="500"></canvas>
-    </div>
-  </div>
-  <div class="small-2 large-2 columns">
-  </div>
-</div>
 
-<div class="dark">
+
+<!-- Top category tabs -->
+<div class="pre-gums"></div>
+<div class="gums">
   <div class="row">
-    <div class="small-3 columns">
-      <a href="#" class="button small" id="clear">Clear</a>
-      <a href="#" class="button small" id="save">Save</a>
+    <div class="drawer-tab" id="eyecategory"><p>eyes</p></div>
+    <div class="drawer-tab" id="mouthcategory"><p>mouths</p></div>
+    <div class="drawer-tab" id="nosecategory"><p>noses</p></div>
+    <div class="drawer-tab" id="earcategory"><p>ears</p></div>
+    <div class="drawer-tab" id="horncategory"><p>horns</p></div>
+    <div class="drawer-tab" id="armcategory"><p>arms</p></div>
+    <div class="drawer-tab" id="legcategory"><p>legs</p></div>
+    <div class="drawer-tab" id="tailcategory"><p>tails</p></div>
+    <div class="drawer-tab" id="haircategory"><p>hair</p></div>
+  </div>
+</div>
+<!-- Canvas and transform toolbar row -->
+<div class="canvas">
+  <div class="row ">
+
+    <!-- Transform Toolbar -->
+    <div class="small-1 large-1 columns">
+      <div id="transform">
+
+        <div class="transform-button" id="remove-button">
+            <i class="fa fa-trash-o fa-2x"></i>
+        </div>
+        <br>
+
+        <div class="transform-button" id="rotate-left">
+          <i class="fa fa-undo fa-2x"></i>
+        </div>
+        <br>
+
+        <div class="transform-button" id="rotate-right">
+          <i class="fa fa-rotate-right fa-2x"></i>
+        </div>
+        <br>
+
+        <div class="transform-button " id="bigger">
+          <i class="fa fa-expand fa-2x"></i>
+        </div>
+        <br>
+
+        <div class="transform-button" id="smaller">
+          <i class="fa fa-compress fa-2x"></i>
+        </div>
+        <br>
+
+        <div class="transform-button" id="flip-vertical">
+          <i class="fa fa-arrows-v fa-2x"></i>
+        </div>
+        <br>
+
+        <div class="transform-button" id="flip-horizontal">
+          <i class="fa fa-arrows-h fa-2x"></i>
+        </div>
+        <br>
+
+        <div class="transform-button cancel" id="cancel">
+          <i class="fa fa-times fa-2x"></i>
+        </div>
+
+      </div><!-- End transform div -->
+    </div> <!-- End small 1 column -->
+
+    <!-- Here's the canvas! -->
+    <div class="small-10 large-10 columns">
+      <canvas id="monsterCanvas" width="900" height="500"></canvas>
+    </div> <!-- End 10 columns -->
+
+    <div class="small-1 large-1 columns">
+    &nbsp;
     </div>
+
+  </div> <!-- End row -->
+</div> <!-- End canvas -->
+
+<!-- Bottom row of teeth -->
+<div class="gums">
+  <div class="row">
+    <div class="drawer-tab-no-click"></div>
+    <div class="drawer-tab-no-click"></div>
+    <div class="drawer-tab-no-click"></div>
+    <div class="drawer-tab-no-click"></div>
+    <div class="drawer-tab-no-click"></div>
+    <div class="drawer-tab-no-click"></div>
+    <div class="drawer-tab-no-click"></div>
+    <div class="drawer-tab-no-click"></div>
+    <div class="drawer-tab-no-click"></div>
+  </div>
+</div>
+<div class="pre-gums"></div>
+
+<!-- Start footer -->
+<div class="footer">
+  <div class="row">
+
+    <div class="small-3 columns">
+      <div class="status-button" id="clear">Clear</div>
+      <div class="status-button" id="save">Save</div>
+    </div>
+
+    <!-- This div is hidden by default -->
     <div id="monster-details">
       <div class="small-3 columns">
         <%= form_for @artwork, url: {controller: 'artworks', action: 'create'}, html: {id: 'frm'} do |f| %>
@@ -112,17 +176,29 @@
           My monster's name is
           <%= f.text_field :name, placeholder: 'Harold' %>
       </div>
+
       <div class="small-3 columns">
           Created by
           <%= f.text_field :artist, placeholder: 'Emily' %>
       </div>
 
        <div class="small-3 columns">
-
-       <a href="#themain" class="button small" id="submit">Submit</a>
-       <% end %>
+         <a href="#themain" class="button small" id="submit">Submit</a>
+         <% end %>
        </div>
-    </div>
-  </div>
-</div>
 
+    </div> <!-- End monter details section -->
+
+  </div> <!-- End Row -->
+</div> <!-- End footer -->
+<!-- Sub footer -->
+<div class="light">
+  <div class="row ">
+    <div class="small-12 columns">
+      <div class="by-line">
+        Created by <%= link_to "Katryn McIntosh", "http://linkedin.com/in/katrynmcintosh" %> | <strong>GA Boston </strong>Summer 2014<br>
+        <i class="fa fa-code-fork"></i> <%= link_to 'Github Repo', "http://github.com/testkitschen/monstertoolbox" %>
+      </div> <!-- End by-line -->
+    </div> <!-- End 12 columns -->
+  </div> <!-- End row -->
+</div> <!-- End light -->
