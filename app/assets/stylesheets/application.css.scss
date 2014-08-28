@@ -105,9 +105,14 @@ cursor: pointer;
 .light {
   background-color: rgba(255, 255, 255, 0.63);
 }
-
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
 .gallery-item{
   width: 15vw;
+  border-radius: 50%;
+  overflow: hidden;
   -moz-box-shadow: inset 2px 2px 3px 2px  rgba(6, 8, 12, 0.31);
   -webkit-box-shadow: inset 2px 2px 3px 2px rgba(6, 8, 12, 0.31);
   box-shadow: inset 2px 2px 3px 2px rgba(6, 8, 12, 0.31);
@@ -115,12 +120,14 @@ cursor: pointer;
   text-align: left;
 }
 .cell {
-  display: inline-block;
-  width: 30%;
-  text-align: left;
+  // display: inline-block;
+  // margin-right: 0.966em;
+  // flex-grow: 1;
+  min-width: 20%;
+  margin: 1em auto;
 }
 .transform-button {
-  margin-right: 3em;
+
   margin-bottom: 1em;
   display: inline-block;
 }

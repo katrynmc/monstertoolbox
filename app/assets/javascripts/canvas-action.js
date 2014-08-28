@@ -4,7 +4,7 @@ var dragStarted;  // indicates whether we are currently in a drag operation
 var offset;
 var update = true;
 var index = 0;
-
+var currentBitmap;
 function stop() {
   createjs.Ticker.removeEventListener("tick", tick);
 }
@@ -17,6 +17,7 @@ function handleClick(event) {
 
   //Convert the image to a bitmap
   bitmap = new createjs.Bitmap(image);
+  currentBitmap = bitmap;
   //Initial placement of monster part
   bitmap.x = (canvas.width - 100) * Math.random()|0;
   bitmap.y = (canvas.height - 100) * Math.random()|0;
@@ -64,7 +65,26 @@ function handleClick(event) {
 
   bitmap.on("dblclick", function(evt) {
     event.preventDefault();
+
     $('#transform').show( "slow");
+      $("#remove-button").click(function(event){
+        container.removeChildAt(0);
+        update = true;
+        $('#transform').hide( "slow" );
+      });
+    // $("#rotate-left").click(function(event){
+
+    // }
+    // $("#rotate-right").click(function(event){
+    //   bitmap.rotation += 30;
+    // }
+    // $("#bigger").click(function(event){
+    //   bitmap.scaleX = 2;
+    // }
+
+    // $("#smaller").click(function(event){
+    //   bitmap.scaleX = 0.5;
+  // }
   });
   createjs.Ticker.addEventListener("tick", tick);
 }
