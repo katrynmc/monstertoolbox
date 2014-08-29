@@ -116,11 +116,15 @@ function handleClick(event) {
       update = true;
     });
     $("#bigger").click(function(event){
-      bitmap.scaleX = 2;
+      bitmap.scaleX += 0.2;
+      bitmap.scaleY += 0.2;
+      update = true;
     });
 
     $("#smaller").click(function(event){
-      bitmap.scaleX = 0.5;
+      bitmap.scaleX -= 0.2;
+      bitmap.scaleY -= 0.2;
+      update = true;
     });
   });
   createjs.Ticker.addEventListener("tick", tick);
