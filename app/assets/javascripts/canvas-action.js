@@ -89,7 +89,7 @@ function handleClick(event) {
     stage.update();
     currentBorder = border;
 
-//For some reason it's removing multiple bitmaps?!?!?!
+//For some reason it's affecting multiple bitmaps?!?!?!
     $('#transform').show( "slow");
 
       $("#remove-button").click(function(event){
@@ -102,19 +102,31 @@ function handleClick(event) {
     $("#rotate-left").click(function(event){
         currentBitmap.rotation -= 30;
         update = true;
-
-      });
-    $("#cancel").click(function(event){
-        tempContainer.removeChildAt(0);
-        update = true;
-        $('#transform').hide( "slow" );
-
       });
 
     $("#rotate-right").click(function(event){
       bitmap.rotation += 30;
       update = true;
     });
+
+    $("#cancel").click(function(event){
+        tempContainer.removeChildAt(0);
+        update = true;
+        $('#transform').hide( "slow" );
+      });
+
+    $("#flip-horizontal").click(function(event){
+      bitmap.scaleX *= -1;
+      update = true;
+    });
+
+    $("#flip-vertical").click(function(event){
+      bitmap.scaleY *= -1;
+      update = true;
+    });
+
+
+
     $("#bigger").click(function(event){
       bitmap.scaleX += 0.2;
       bitmap.scaleY += 0.2;
