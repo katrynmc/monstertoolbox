@@ -1,3 +1,9 @@
+<div class="homepage"></div>
+<div class="footer">
+  <div class="title">
+    <%= link_to "Monster Toolbox", root_path %>
+  </div>
+</div>
 <div class="floatontop">
   <div class="circle-button1" >
     <%= link_to 'Create!', new_artwork_path, class: "circle-text" %>
@@ -7,16 +13,10 @@
     <%= link_to 'Browse', artworks_path, class: "circle-text" %>
   </div>
 </div>
-
-
-<%= image_tag('monsterhome.png', class: "homepage") %>
-
-    </div>
+<div class="white-spacer"></div>
 <div class="row">
-  <div class="small-12 columns">
-    <div class="by-line">
-      Created by <%= link_to "Katryn McIntosh", "http://linkedin.com/in/katrynmcintosh" %> | <strong>GA Boston </strong>Summer 2014<br>
-      <i class="fa fa-code-fork"></i> <%= link_to 'Github Repo', "http://github.com/testkitschen/monstertoolbox" %>
-    </div>
+  <div class="toolbox text-center">
+    <%= image_tag('toolbox.png', class: "text-center") %>
   </div>
+  <div class="white-spacer"></div>
 </div>
