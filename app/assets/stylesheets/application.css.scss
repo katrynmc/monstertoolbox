@@ -29,7 +29,7 @@
   z-index: 2;
 }
 .pb-circle {
-  background-color: #000;
+  background-color: #fff;
   height: 3.5em;
   width: 3.5em;
   padding: 0.6em;
@@ -127,7 +127,10 @@
   }
 }
 
+.new-links {
+  font-size: 24px;
 
+}
 
 .drawer-tab-no-click {
   width: 0;
@@ -142,7 +145,7 @@
 }
 
 .canvas{
-  background-color: rgba(0, 0, 0, 0.96);
+  background-color: #fff;
 }
 
 .sidebar{
@@ -169,6 +172,7 @@
 .gallery-item{
   width: 15vw;
   border-radius: 50%;
+
   overflow: hidden;
   -moz-box-shadow: inset 2px 2px 3px 2px  rgba(6, 8, 12, 0.31);
   -webkit-box-shadow: inset 2px 2px 3px 2px rgba(6, 8, 12, 0.31);

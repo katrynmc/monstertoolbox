@@ -1,16 +1,11 @@
 <div class="footer">
   <div class="title">
+    <%= link_to 'Create', new_artwork_path, class: "new-links" %>
     <%= link_to "Monster Toolbox", root_path %>
+    <%= link_to 'Browse', artworks_path, class: "new-links" %>
   </div>
 </div>
-<div class="floatontop">
-  <div class="circle-button1" >
-    <%= link_to 'Create!', new_artwork_path, class: "circle-text" %>
-  </div>
-  <div class="circle-button2" >
-    <%= link_to 'Browse', artworks_path, class: "circle-text" %>
-  </div>
-</div>
+<div class="white-spacer"></div>
 <div class="row">
 
   <div class="small-4 columns">
@@ -25,3 +20,4 @@
   </div>
 
 </div>
+<div class="white-spacer"></div>
