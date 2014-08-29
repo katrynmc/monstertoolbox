@@ -5,8 +5,9 @@
   font-family: 'Codystar', cursive;
   font-size: 4.8em;
   color: #fff;
-  line-height: 1.3em;
+  line-height: 1.0em;
   text-align: center;
+  padding-top: 10px;
   a {
     color: #fff;
   }
@@ -141,13 +142,14 @@
 .drawer-tab-no-click {
   width: 0;
   height: 0;
-  border-left: 52px solid transparent;
-  border-right: 52px solid transparent;
-  border-bottom:70px solid #fff;
+  border-left: 32px solid transparent;
+  border-right: 32px solid transparent;
+  border-bottom:50px solid #fff;
   font-size: 0;
   line-height: 0;
   display: inline-block;
   margin-top: 10px;
+  margin-right: 2px;
 }
 
 .canvas{
@@ -202,7 +204,7 @@
 .transform-button {
   margin-bottom: 1em;
   display: inline-block;
-  color: #fff;
+  color: #000;
 }
 
 .cancel{

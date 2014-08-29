@@ -100,7 +100,7 @@ function handleClick(event) {
       });
 
     $("#rotate-left").click(function(event){
-        currentBitmap.rotation(rotatepoint += 45);
+        currentBitmap.rotation -= 30;
         update = true;
 
       });
@@ -111,16 +111,17 @@ function handleClick(event) {
 
       });
 
-    // $("#rotate-right").click(function(event){
-    //   bitmap.rotation += 30;
-    // }
-    // $("#bigger").click(function(event){
-    //   bitmap.scaleX = 2;
-    // }
+    $("#rotate-right").click(function(event){
+      bitmap.rotation += 30;
+      update = true;
+    });
+    $("#bigger").click(function(event){
+      bitmap.scaleX = 2;
+    });
 
-    // $("#smaller").click(function(event){
-    //   bitmap.scaleX = 0.5;
-  // }
+    $("#smaller").click(function(event){
+      bitmap.scaleX = 0.5;
+    });
   });
   createjs.Ticker.addEventListener("tick", tick);
 }
